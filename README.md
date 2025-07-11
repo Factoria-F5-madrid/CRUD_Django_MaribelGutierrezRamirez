@@ -2,7 +2,7 @@
   <img src="CARATULA%20DJANGO.png" alt="Carátula del Proyecto" width="1000"/>
 </p>
 
-
+⚠️Proyecto en creación aún no es la versión final ⚠️
 # CRUD_Django_MaribelGutierrezRamirez
 
 
