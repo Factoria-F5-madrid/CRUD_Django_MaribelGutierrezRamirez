@@ -62,7 +62,8 @@ El patrón de arquitectura de software MVC (Modelo–Vista–Controlador) separa
 
 
  - Diferencias entre MVC y MVT. 
- - ¿Cuál de estos dos patrones se usa en Django?
+ - **¿Cuál de estos dos patrones se usa en Django?**
+   Django utiliza el patrón MVT (Modelo-Vista-Template).
 ___
 
 3. ¿Cómo se estructura un proyecto en Django? Explicar brevemente el rol de los modelos, vistas, templates y URLs. 
