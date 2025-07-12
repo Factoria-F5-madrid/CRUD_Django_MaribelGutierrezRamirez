@@ -67,12 +67,12 @@ El patrón de arquitectura de software MVC (Modelo–Vista–Controlador) separa
 Cuando usamos MVC, tenemos que escribir todo el código que indica cómo se toman los datos y se muestran en la pantalla. Es decir, tener el rol de del "controlador", que conecta el modelo, los datos, con la vista.
 En cambio, si usamos MVT, el framework ya hace ese trabajo. Django se encarga automáticamente de esa parte del proceso, así que ya no necesitamos escribir tanto código.
 
- - **¿Cuál de estos dos patrones se usa en Django?**
+ - **¿Cuál de estos dos patrones se usa en Django?** ☑️
    
    Django utiliza el patrón MVT (Modelo-Vista-Template).
 ___
 
-**3. ¿Cómo se estructura un proyecto en Django? Explicar brevemente el rol de los modelos, vistas, templates y URLs.**
+**3. ¿Cómo se estructura un proyecto en Django? Explicar brevemente el rol de los modelos, vistas, templates y URLs.** 👀
 
 Un proyecto de Django se organiza en apps (aplicaciones), cada una con una función específica. Dentro de cada app hay cuatro componentes clave:
 Componentes principales:
@@ -82,10 +82,28 @@ Componentes principales:
 - 4. URLs (urls.py): Definen las rutas de la aplicación y qué vista debe ejecutarse para cada URL.
 ___
      
-- **¿Para qué se usa el signo “%%” en los templates?**
+**¿Para qué se usa el signo “%%” en los templates?** 🤔
+
 El signo {% ... %} se usa en Django Templates para ejecutar sentencias de control, como estructuras de flujo (condicionales, bucles) o instrucciones del lenguaje de plantillas.
   ___
-4. ¿Cuál es el flujo de datos entre un formulario HTML y la base de datos en Django?
+**4. ¿Cuál es el flujo de datos entre un formulario HTML y la base de datos en Django?**
+
+Así viaja la información una vez el usuario completa el formulario en la página web. En realidad, es un proceso bastante simple e intuitivo.
+
+- Paso 1: El usuario envía sus datos
+El usuario completa el formulario en la página web y, al hacer clic en "Enviar", se genera una solicitud HTTP —usualmente de tipo POST— que envía esos datos al servidor.
+
+- Paso 2: Django recibe la solicitud
+En el backend, Django detecta esta solicitud POST. Una función vista (ya sea basada en funciones o clases) se encarga de recibir y manejar esa solicitud.
+
+- Paso 3: Validación y procesamiento de datos
+Dentro de la vista, se crea una instancia de un Form con los datos enviados. Django valida automáticamente si los campos requeridos están completos y si los datos cumplen con el formato esperado. Si hay errores, se devuelve una respuesta mostrando al usuario qué debe corregir.
+
+- Paso 4: Guardado en la base de datos
+Si todo es válido, Django crea una instancia del modelo correspondiente y guarda los datos en la base de datos utilizando el método .save().
+
+- Paso 5: Respuesta al usuario
+Una vez guardados los datos correctamente, se puede redirigir al usuario a una página de confirmación o mostrarle un mensaje agradeciéndole por completar el formulario.
    ___
 6. ¿Qué herramientas o comandos ofrece Django para facilitar el desarrollo de un CRUD, para qué es cada una? (Por ejemplo: startapp, makemigrations, migrate, runserver, ModelForm, admin, etc.)
    ___
