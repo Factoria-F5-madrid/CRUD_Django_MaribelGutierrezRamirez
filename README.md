@@ -104,6 +104,12 @@ Si todo es válido, Django crea una instancia del modelo correspondiente y guard
 
 - Paso 5: Respuesta al usuario
 Una vez guardados los datos correctamente, se puede redirigir al usuario a una página de confirmación o mostrarle un mensaje agradeciéndole por completar el formulario.
+
+<p align="center">
+  <img src="https://drive.google.com/uc?export=view&id=1reTXxcI9NpX-CBZsRj8Mz5ttn116sQkq" alt="Flujo de datos Django" width="400"/>
+</p>
+
+
    ___
 6. ¿Qué herramientas o comandos ofrece Django para facilitar el desarrollo de un CRUD, para qué es cada una? (Por ejemplo: startapp, makemigrations, migrate, runserver, ModelForm, admin, etc.)
    ___
