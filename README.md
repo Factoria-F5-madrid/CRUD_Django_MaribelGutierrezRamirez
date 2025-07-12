@@ -61,7 +61,12 @@ El patrón de arquitectura de software MVC (Modelo–Vista–Controlador) separa
 **C**ontrolador: Procesa la solicitud del usuario (request), interactúa con el modelo para obtener o modificar datos, y luego llama a la vista, pasándole la información necesaria para ser mostrada.
 
 
- - Diferencias entre MVC y MVT. 
+ - **Diferencias entre MVC y MVT.**
+   
+**MVC** (Modelo-Vista-Controlador) y **MVT** (Modelo-Vista-Template) son dos formas de organizar el código cuando desarrollo una aplicación. Ambos patrones dividen la aplicación en tres partes para que sea más fácil de entender y trabajar. La diferencia principal está en quién se encarga de la parte que controla cómo se conectan los datos con lo que el usuario ve.
+Cuando usamos MVC, tenemos que escribir todo el código que indica cómo se toman los datos y se muestran en la pantalla. Es decir, tener el rol de del "controlador", que conecta el modelo, los datos, con la vista.
+En cambio, si usamos MVT, el framework ya hace ese trabajo. Django se encarga automáticamente de esa parte del proceso, así que ya no necesitamos escribir tanto código.
+
  - **¿Cuál de estos dos patrones se usa en Django?**
    Django utiliza el patrón MVT (Modelo-Vista-Template).
 ___
