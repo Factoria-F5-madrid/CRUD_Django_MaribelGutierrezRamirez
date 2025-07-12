@@ -82,7 +82,8 @@ Componentes principales:
 - 4. URLs (urls.py): Definen las rutas de la aplicación y qué vista debe ejecutarse para cada URL.
 ___
      
-- ¿Para qué se usa el signo “%%” en los templates?
+- **¿Para qué se usa el signo “%%” en los templates?**
+El signo {% ... %} se usa en Django Templates para ejecutar sentencias de control, como estructuras de flujo (condicionales, bucles) o instrucciones del lenguaje de plantillas.
   ___
 4. ¿Cuál es el flujo de datos entre un formulario HTML y la base de datos en Django?
    ___
