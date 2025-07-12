@@ -2,11 +2,8 @@
   <img src="CARATULA%20DJANGO.png" alt="Carátula del Proyecto" width="1000"/>
 </p>
 
-⚠️Proyecto en creación aún no es la versión final ⚠️
-# CRUD_Django_MaribelGutierrezRamirez
 
-
-**1. ¿Qué es un CRUD y cuál es su propósito en el desarrollo de aplicaciones web?**
+**¿Qué es un CRUD y cuál es su propósito en el desarrollo de aplicaciones web?**
 
 
 ✍️ Añade un ejemplo de aplicación web que use una estructura de CRUD
@@ -31,7 +28,7 @@ Imaginemos que estoy creando una base de datos de mis proyectos en curso:
 
 ---
 
-**2 . ¿Qué son los patrones de arquitectura en desarrollo de software?**
+ **¿Qué son los patrones de arquitectura en desarrollo de software?**
 
 Los patrones de arquitectura son soluciones reutilizables y probadas para problemas comunes que aparecen al diseñar la estructura de una aplicación. No son fragmentos de código que se copian y pegan, sino plantillas conceptuales que guían cómo organizar los componentes principales de un sistema de software.
 
@@ -61,7 +58,7 @@ El patrón de arquitectura de software MVC (Modelo–Vista–Controlador) separa
 **C**ontrolador: Procesa la solicitud del usuario (request), interactúa con el modelo para obtener o modificar datos, y luego llama a la vista, pasándole la información necesaria para ser mostrada.
 
 
- - **Diferencias entre MVC y MVT.**
+-**Diferencias entre MVC y MVT.**
    
 **MVC** (Modelo-Vista-Controlador) y **MVT** (Modelo-Vista-Template) son dos formas de organizar el código cuando desarrollo una aplicación. Ambos patrones dividen la aplicación en tres partes para que sea más fácil de entender y trabajar. La diferencia principal está en quién se encarga de la parte que controla cómo se conectan los datos con lo que el usuario ve.
 Cuando usamos MVC, tenemos que escribir todo el código que indica cómo se toman los datos y se muestran en la pantalla. Es decir, tener el rol de del "controlador", que conecta el modelo, los datos, con la vista.
@@ -72,7 +69,7 @@ En cambio, si usamos MVT, el framework ya hace ese trabajo. Django se encarga au
    Django utiliza el patrón MVT (Modelo-Vista-Template).
 ___
 
-**3. ¿Cómo se estructura un proyecto en Django? Explicar brevemente el rol de los modelos, vistas, templates y URLs.** 👀
+**¿Cómo se estructura un proyecto en Django? Explicar brevemente el rol de los modelos, vistas, templates y URLs.** 👀
 
 Un proyecto de Django se organiza en apps (aplicaciones), cada una con una función específica. Dentro de cada app hay cuatro componentes clave:
 Componentes principales:
@@ -86,7 +83,7 @@ ___
 
 El signo {% ... %} se usa en Django Templates para ejecutar sentencias de control, como estructuras de flujo (condicionales, bucles) o instrucciones del lenguaje de plantillas.
   ___
-**4. ¿Cuál es el flujo de datos entre un formulario HTML y la base de datos en Django?**
+**¿Cuál es el flujo de datos entre un formulario HTML y la base de datos en Django?**
 
 Así viaja la información una vez el usuario completa el formulario en la página web. En realidad, es un proceso bastante simple e intuitivo.
 
@@ -111,12 +108,25 @@ Una vez guardados los datos correctamente, se puede redirigir al usuario a una p
 
 
    ___
-**6. ¿Qué herramientas o comandos ofrece Django para facilitar el desarrollo de un CRUD, para qué es cada una? (Por ejemplo: startapp, makemigrations, migrate, runserver, ModelForm, admin, etc.)**
+**¿Qué herramientas o comandos ofrece Django para facilitar el desarrollo de un CRUD, para qué es cada una? (Por ejemplo: startapp, makemigrations, migrate, runserver, ModelForm, admin, etc.)**
 
+| Herramienta / Comando              | ¿Para qué sirve?                                                                                                     |
+| ---------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| `django-admin startproject`        | Crea un nuevo proyecto Django desde cero. Contiene la configuración principal del sitio.                             |
+| `python manage.py startapp`        | Crea una nueva aplicación dentro del proyecto. Aquí escribirás el código del CRUD.                                   |
+| `python manage.py makemigrations`  | Detecta cambios en los modelos y los convierte en archivos de migración (instrucciones para crear/modificar tablas). |
+| `python manage.py migrate`         | Aplica las migraciones a la base de datos: crea o actualiza las tablas según tus modelos.                            |
+| `python manage.py runserver`       | Inicia un servidor local para probar la aplicación en el navegador.                                                  |
+| `python manage.py createsuperuser` | Crea un usuario administrador para acceder al panel de administración de Django.                                     |
 
 
    ___
-8. ¿Cómo funciona el Admin de Django? 
+**¿Cómo funciona el Admin de Django?**
+El admin de Django es una de las herramientas más útiles para los desarrolladores, ya que permite gestionar la base de datos desde una interfaz web sin necesidad de escribir código adicional.
+Una de sus principales ventajas es que permite controlar fácilmente los usuarios, roles y permisos, lo que resulta útil si necesitas restringir quién puede ver o modificar ciertos datos.
+En cuanto a las BBDD se puede agregar, editar o eliminar registros, verlos organizados en listas, aplicar filtros o búsquedas para encontrarlos más rápido, e incluso trabajar con relaciones entre modelos, como claves foráneas, de forma visual e intuitiva.
+Todo esto lo puedes hacer desde el navegador, sin tener que construir tu propia interfaz de administración. 
+
 
 
 
