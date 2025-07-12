@@ -111,7 +111,10 @@ Una vez guardados los datos correctamente, se puede redirigir al usuario a una p
 
 
    ___
-6. ¿Qué herramientas o comandos ofrece Django para facilitar el desarrollo de un CRUD, para qué es cada una? (Por ejemplo: startapp, makemigrations, migrate, runserver, ModelForm, admin, etc.)
+**6. ¿Qué herramientas o comandos ofrece Django para facilitar el desarrollo de un CRUD, para qué es cada una? (Por ejemplo: startapp, makemigrations, migrate, runserver, ModelForm, admin, etc.)**
+
+
+
    ___
 8. ¿Cómo funciona el Admin de Django? 
 
