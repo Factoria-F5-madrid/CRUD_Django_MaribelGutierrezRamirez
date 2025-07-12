@@ -68,10 +68,20 @@ Cuando usamos MVC, tenemos que escribir todo el código que indica cómo se toma
 En cambio, si usamos MVT, el framework ya hace ese trabajo. Django se encarga automáticamente de esa parte del proceso, así que ya no necesitamos escribir tanto código.
 
  - **¿Cuál de estos dos patrones se usa en Django?**
+   
    Django utiliza el patrón MVT (Modelo-Vista-Template).
 ___
 
-3. ¿Cómo se estructura un proyecto en Django? Explicar brevemente el rol de los modelos, vistas, templates y URLs. 
+**3. ¿Cómo se estructura un proyecto en Django? Explicar brevemente el rol de los modelos, vistas, templates y URLs.**
+
+Un proyecto de Django se organiza en apps (aplicaciones), cada una con una función específica. Dentro de cada app hay cuatro componentes clave:
+Componentes principales:
+- 1. Modelos (models.py): Definen la estructura de la base de datos. Cada modelo es una tabla con campos como CharField, DateField, etc.
+- 2. Vistas (views.py): Contienen la lógica que se ejecuta cuando un usuario hace una solicitud. Se conectan con los modelos y envían datos a los templates.
+- 3. Templates (carpeta templates/): Archivos HTML con marcadores especiales que permiten insertar datos dinámicos.
+- 4. URLs (urls.py): Definen las rutas de la aplicación y qué vista debe ejecutarse para cada URL.
+___
+     
 - ¿Para qué se usa el signo “%%” en los templates?
   ___
 4. ¿Cuál es el flujo de datos entre un formulario HTML y la base de datos en Django?
